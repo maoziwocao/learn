@@ -29,5 +29,10 @@ export default new Router({
       name: 'deepClone',
       component: () => import('./components/DeepClone.vue'),
     },
+    {
+      path: '/debounce',
+      name: 'debounce ',
+      component: () => import('./components/Debounce.vue'),
+    },
   ],
 });
