@@ -10,5 +10,7 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('components', resolve('src/components'));
+    config.plugins.delete('preload');
+    config.plugins.delete('prefetch');
   },
 };

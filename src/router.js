@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Nav from './views/Nav.vue';
-import Home from '@/views/Home.vue';
 
 Vue.use(Router);
 
@@ -24,19 +23,17 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component: Home,
+      component: () => import('@/views/Home.vue'),
     },
-    // {
-    //   path: '/deepClone',
-    //   name: 'deepClone',
-    //   // component: () => import('./components/DeepClone.vue'),
-    //   component: './views/DeepClone.vue',
-    // },
-    // {
-    //   path: '/debounce',
-    //   name: 'debounce ',
-    //   // component: () => import('./components/Debounce.vue'),
-    //   component: './views/Debounce.vue',
-    // },
+    {
+      path: '/deepClone',
+      name: 'deepClone',
+      component: () => import('./components/DeepClone.vue'),
+    },
+    {
+      path: '/debounce',
+      name: 'debounce ',
+      component: () => import('./components/Debounce.vue'),
+    },
   ],
 });
