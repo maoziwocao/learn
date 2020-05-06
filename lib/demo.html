@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>@yw demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./@yw.umd.js"></script>
+
+<link rel="stylesheet" href="./@yw.css">
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: @yw
+  }
+}).$mount('#app')
+</script>

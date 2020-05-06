@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name @yw --dest lib src/components/admin-components/*.vue",
     "test": "jest"
   },
   "dependencies": {
