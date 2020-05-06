@@ -27,3 +27,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### run lib
+npx vue-cli-service build --target lib --name @yw src/components/admin-components/*.vue
+npm run 会找不到路径
