@@ -3,7 +3,7 @@
     <router-link to='./home'>home</router-link>
     <router-link to='./deepClone'>deepClone</router-link>
     <router-link to='./debounce'>防抖 节流</router-link>
-    <search />
+    <router-link to='./component'>npm component</router-link>
   </div>
 </template>
 

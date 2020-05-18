@@ -35,5 +35,9 @@ export default new Router({
       name: 'debounce ',
       component: () => import('./components/Debounce.vue'),
     },
+    {
+      path: '/component',
+      component: () => import('./components/npmComponent.vue'),
+    },
   ],
 });
