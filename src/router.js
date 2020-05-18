@@ -39,5 +39,9 @@ export default new Router({
       path: '/component',
       component: () => import('./components/npmComponent.vue'),
     },
+    {
+      path: '/uniqueSelect',
+      component: () => import('./components/uniqueSelect.vue'),
+    },
   ],
 });

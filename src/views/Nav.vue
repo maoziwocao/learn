@@ -4,6 +4,7 @@
     <router-link to='./deepClone'>deepClone</router-link>
     <router-link to='./debounce'>防抖 节流</router-link>
     <router-link to='./component'>npm component</router-link>
+    <router-link to='./uniqueSelect'>多个select共享数据， 值唯一，其他无法选择</router-link>
   </div>
 </template>
 
