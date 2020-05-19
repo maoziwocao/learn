@@ -6,16 +6,21 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name @yw src/components/admin-components/*.vue",
+    "lib": "vue-cli-service build --target lib --name @yw/search --dist lib src/components/admin-components/index.js",
     "test": "jest"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.13.2",
+    "eslint-plugin-import": "^2.20.2",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuepressyaow": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-umd": "^7.9.0",
     "@vue/cli-plugin-babel": "^3.6.0",
     "@vue/cli-plugin-eslint": "^3.6.0",
     "@vue/cli-service": "^3.6.0",

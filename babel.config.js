@@ -4,6 +4,10 @@ module.exports = {
   ],
   plugins: [
     [
+      '@babel/plugin-transform-modules-umd',
+
+    ],
+    [
       '@babel/plugin-syntax-dynamic-import',
     ],
   ],
