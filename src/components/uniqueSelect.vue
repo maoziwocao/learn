@@ -1,20 +1,21 @@
 <template lang="pug">
 div
+  p 思路是把所选的value放到一个数组中, 然后options中做判断
   el-row(style="width: 1224px")
     el-col(:span="10")
-      el-select(v-model="value1" @change="onSelectChange")
+      el-select(v-model="value1" clearable)
         el-option(
           v-for="v in options"
           :key="v.value" :value="v.value" :label="v.label"
-          v-show="!choosedIds.includes(v.value) || value1 === v.value"
+          :disabled="[value1, value2].includes(v.value) && value1 !== v.value"
         )
       p value: {{getName(value1)}}
     el-col(:span="10" :offset="2")
-      el-select(v-model="value2")
+      el-select(v-model="value2" clearable)
         el-option(
           v-for="v in options"
           :key="v.value" :value="v.value" :label="v.label"
-          v-show="!choosedIds.includes(v.value) || value2 === v.value"
+          :disabled="[value1, value2].includes(v.value) && value2 !== v.value"
         )
       p value: {{getName(value2)}}
 </template>
@@ -39,9 +40,6 @@ export default {
     getName(v) {
       const obj = this.options.find(e => e.value === v) || {};
       return obj.label || '';
-    },
-    onSelectChange(v) {
-      this.choosedIds.push(v);
     },
   },
 };
