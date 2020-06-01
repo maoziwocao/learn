@@ -43,5 +43,10 @@ export default new Router({
       path: '/uniqueSelect',
       component: () => import('./components/uniqueSelect.vue'),
     },
+    {
+      path: '/paramsRouter/:page/:id',
+      props: true,
+      component: () => import('./components/paramsRouter.vue'),
+    },
   ],
 });
