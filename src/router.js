@@ -47,5 +47,10 @@ export default new Router({
       path: '/baseInput',
       component: () => import('./components/baseInput.vue'),
     },
+    {
+      path: '/paramsRouter/:page/:id',
+      props: true,
+      component: () => import('./components/paramsRouter.vue'),
+    },
   ],
 });
