@@ -13,7 +13,7 @@
       placement="bottom"
     )
       router-link(to='./uniqueSelect') uniqueSelect
-
+    router-link(to='./baseInput') baseInput(sync修饰符)
 </template>
 
 <script>

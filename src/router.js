@@ -43,5 +43,9 @@ export default new Router({
       path: '/uniqueSelect',
       component: () => import('./components/uniqueSelect.vue'),
     },
+    {
+      path: '/baseInput',
+      component: () => import('./components/baseInput.vue'),
+    },
   ],
 });

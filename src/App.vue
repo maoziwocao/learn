@@ -1,5 +1,7 @@
 <template>
-  <router-view/>
+  <keep-alive include="baseInputTest">
+    <router-view/>
+  </keep-alive>
 </template>
 
 <style lang="less">
